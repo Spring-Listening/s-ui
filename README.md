@@ -1,4 +1,12 @@
-# bes-ui
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: zoucw (zoucw@yunjiglobal.com)
+ * @Date: 2020-02-29 01:40:47
+ * @LastEditors: 
+ * @LastEditTime: 2020-03-03 16:53:40
+ -->
+# s-ui
 一个基于Vue CLI 3.0，Babel7，VUE2.6封装的VUE-UI组件库模版，内置两个组件component1，和component2，支持统一加载和按需加载，可以按需分别加载对应组件的js和css，模块化的方式基本参考ElemenuUI，按需加载用babel-plugin-component组件支持。
 
  [![npm version](https://img.shields.io/npm/v/bes-ui.svg?style=flat-square)](https://www.npmjs.com/package/bes-ui)
@@ -12,7 +20,7 @@
 ## Installing
 
 ```shell
-npm install bes-ui --save
+npm install s-ui --save
 ```
 
 在 [unpkg](https://unpkg.com/bes-ui/) 上获取
@@ -28,15 +36,15 @@ npm install bes-ui --save
 
 ```JavaScript
 // 统一加载
-import BesUI from 'bes-ui'
-Vue.use(BesUI)
+import Sui from 's-ui'
+Vue.use(Sui)
 
 // 只加载component1
-import { component1 } from 'bes-ui'
+import { component1 } from 's-ui'
 Vue.use(component1)
 
 // 加载component1和component2
-import { component1 , component2} from 'bes-ui'
+import { component1 , component2} from 's-ui'
 Vue.use(component1)
 Vue.use(component2)
 ```
